@@ -2,32 +2,32 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>電卓js</title>
+    <title>Dentaku.js</title>
  
 <style>
 .top {
-    width : 100%;
-    height : 100%;
+    width : 50%;
+    height : 50%;
     border-color: red;
     border: 1px;
 }
  
 .row {
-    width : 100%;
-    height : 14%;
+    width : 50%;
+    height : 20%;
     background-color: #888;
 }
  
 .cell {
-    width : 25%;
+    width : 15%;
     background-color: #fff;
 }
  
 .text {
-    width : 100%;
-    height : 100%;
+    width : 50%;
+    height : 50%;
     text-align: right;
-    font-size: 1.4em;
+    font-size: 1em;
     padding:0px;
     margin:0px;
     border:none;
@@ -35,13 +35,13 @@
  
 .button {
     width : 100%;
-    height : 100%;
+    height : 50%;
     font-size: 1.4em;
     padding: 10px;
 }
  
 html, body {
-    height : 100%;
+    height : 50%;
     margin: 0px;
     padding: 0px;
 }
@@ -269,7 +269,7 @@ function createViewControl()
     function c() { key( "C" ).onclick = function(){ dentaku_model.clear()  ; refresh(); } }
     function ac() { key( "AC" ).onclick = function(){ dentaku_model.all_clear()  ; refresh(); } }
     function d() { key( "/" ).onclick = function() { dentaku_model.divide(); refresh(); } }
-    function m() { key( "*" ).onclick = function() { dentaku_model.multi() ; refresh(); } }
+    function m() { key( "×" ).onclick = function() { dentaku_model.multi() ; refresh(); } }
     function s() { key( "-" ).onclick = function() { dentaku_model.sub()   ; refresh(); } }
     function a() { key( "+" ).onclick = function() { dentaku_model.add()   ; refresh(); } }
     function e() { key( "=" ).onclick = function() { dentaku_model.equal() ; refresh(); } }
